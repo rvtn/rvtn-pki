@@ -1,0 +1,45 @@
+html
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    
+    background: #EEEEEE;
+}
+
+div#header
+{
+    background: #CCCCCC;
+
+    padding: 1% 0 1% 2%;
+    
+    font-size: 200%;
+}
+
+div#content
+{
+    background: #EEEEEE;
+
+    padding: 3% 3% 3% 3%;
+    margin: 0;
+}
+
+div.section
+{
+    background: #DDDDDD;
+    
+    padding: 1% 1% 1% 1%;
+    margin: 1% 1% 1% 1%;
+}
+
+div.section_header
+{
+    font-size: 140%;
+}

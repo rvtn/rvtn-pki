@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>RVTN Prime Repository</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>RVTN Prime Repository</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
 
-<body>
-<h1>RVTN Prime</h1>
-<h3>RVTN PKI repository</h3>
-<p>This site is the repository for RVTN Prime, the RVTN Public Key Infrastructure (PKI).  Certificates and Certificate Revocation Lists (CRLs), as well as other documents of interest, are available below.</p>
-<h3>RVTN Root Certification Authority</h3>
-<p><a href="PrimeRoot.crt">Prime Root Certificate</a></p>
-<p><a href="PrimeRoot.crl">Prime Root CRL</a></p>
+    <body>
 
-<h3>RVTN Enterprise Authority</h3>
-<p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
-<p><a href="PrimeEnt0.crt">Prime Enterprise Certificate</a></p>
-<p><a href="PrimeEnt0.crl">Prime Enterprise CRL</a></p>
-<p><a href="rvtn-enterprise-cps.txt">Prime Enterprise Certification Practices Statement (CPS)</a></p>
+        <div id="header">RVTN Prime</div>
+    
+        <div id="content">
+            <div class="section">
+                <div class="section_header">RVTN PKI repository</div>
+                <p>This site is the repository for RVTN Prime, the RVTN Public Key Infrastructure (PKI).  Certificates and Certificate Revocation Lists (CRLs), as well as other documents of interest, are available below.</p>
+            </div>
+            <div class="section">
+                <div class="section_header">RVTN Root Certification Authority</div>
+                <p><a href="PrimeRoot.crt">Prime Root Certificate</a></p>
+                <p><a href="PrimeRoot.crl">Prime Root CRL</a></p>
+            </div>
+            <div class="section">
+                <div class="section_header">RVTN Enterprise Authority</div>
+                <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
+                <p><a href="PrimeEnt0.crt">Prime Enterprise Certificate</a></p>
+                <p><a href="PrimeEnt0.crl">Prime Enterprise CRL</a></p>
+                <p><a href="rvtn-enterprise-cps.txt">Prime Enterprise Certification Practices Statement (CPS)</a></p>
+            </div>
+            <div class="section">
+                <div class="section_header">Other Information</div>
+                <p><a href="oid.txt">RVTN Prime Object Identifiers (OIDs)</a></p>
+            </div>
+        </div>
 
-<h3>Other Information</h3>
-<p><a href="oid.txt">RVTN Prime Object Identifiers (OIDs)</a></p>
-</body>
+    </body>
 
 </html>
