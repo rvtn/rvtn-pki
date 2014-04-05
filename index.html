@@ -8,24 +8,42 @@
 
     <body>
 
-        <div id="header">RVTN Prime</div>
+        <div id="header">
+            <div class="header_title">
+                <a href="http://pki.rvtn.org">RVTN Prime Repository</a>
+            </div>
+            <div class="header_text">
+                <p>This site is the repository for RVTN Prime, the RVTN Public Key Infrastructure (PKI).  The repository is publicly available at pki.rvtn.org.</p>
+                <p>The PKI includes a variety of Certification Authorities (CAs), which issue X.509 certificates for both public and RVTN Enterprise (non-public) use.</p>
+                <p>Certificates and Certificate Revocation Lists (CRLs), as well as other documents of interest, are available below.</p>
+            </div>
+        </div>
     
         <div id="content">
             <div class="section">
-                <div class="section_header">RVTN PKI repository</div>
-                <p>This site is the repository for RVTN Prime, the RVTN Public Key Infrastructure (PKI).  Certificates and Certificate Revocation Lists (CRLs), as well as other documents of interest, are available below.</p>
-            </div>
-            <div class="section">
-                <div class="section_header">RVTN Root Certification Authority</div>
+                <div class="section_header">RVTN Root Authority</div>
+                <p>The RVTN Root Authority is the primary trust anchor for the RVTN PKI.</p>
                 <p><a href="PrimeRoot.crt">Prime Root Certificate</a></p>
                 <p><a href="PrimeRoot.crl">Prime Root CRL</a></p>
             </div>
             <div class="section">
-                <div class="section_header">RVTN Enterprise Authority</div>
+                <div class="section_header">RVTN Prime Enterprise Authority</div>
+                <p>The RVTN Prime Enterprise Authority operates in accordance with the Prime Enterprise Certification Practices Statement (CPS).</p>
+                <p>This certification authority offers 4 levels of assurance as defined in the CPS: basic, low, medium, and high.</p>
                 <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
-                <p><a href="PrimeEnt0.crt">Prime Enterprise Certificate</a></p>
-                <p><a href="PrimeEnt0.crl">Prime Enterprise CRL</a></p>
+                <p><a href="PrimeEnterprise.crt">Prime Enterprise Certificate</a></p>
+                <p><a href="PrimeEnterprise.crl">Prime Enterprise CRL</a></p>
                 <p><a href="rvtn-enterprise-cps.txt">Prime Enterprise Certification Practices Statement (CPS)</a></p>
+            </div>
+            <div class="section">
+                <div class="section_header">RVTN Prime IE1 Authority</div>
+                <p>The RVTN Prime Enterprise Authority IE1 is an online issuing certification authority.</p>
+                <p>This certification authority offers 3 levels of assurance as defined in the Prime Enterprise CPS: basic, low, and medium.</p>
+                <p>Certificates from this authority are only issued for the following purposes: Server Authentication, Client Authentication, Secure Email,
+                    IPsec End System, IPsec tunnel termination, IPsec User, IPsec IKE Intermediate, KDC Authentication, Private Key Archival, and Remote Desktop Authentication.</p>
+                <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
+                <p><a href="PrimeIE1.crt">Prime Enterprise IE1 Certificate</a></p>
+                <p><a href="PrimeIE1.crl">Prime Enterprise IE1 CRL</a></p>
             </div>
             <div class="section">
                 <div class="section_header">Other Information</div>

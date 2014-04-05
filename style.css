@@ -19,8 +19,6 @@ div#header
     background: #CCCCCC;
 
     padding: 1% 0 1% 2%;
-    
-    font-size: 200%;
 }
 
 div#content
@@ -40,6 +38,11 @@ div#footer
     font-size: 75%;
     
     text-align: center;
+}
+
+div.header_title
+{
+    font-size: 200%;
 }
 
 div.section
