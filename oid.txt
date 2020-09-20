@@ -22,6 +22,7 @@ RVTN.org arc:  1.3.6.1.4.1.43141
       rvtn-certtemplate-rdp:         1.3.6.1.4.1.43141.5.10.11
       rvtn-certtemplate-serverauth:  1.3.6.1.4.1.43141.5.10.12
       rvtn-certtemplate-ipsecserver: 1.3.6.1.4.1.43141.5.10.13
+      rvtn-certtemplate-ipsecserver: 1.3.6.1.4.1.43141.5.10.14
       
 
 ---------------------
@@ -38,3 +39,4 @@ rvtn ::= {iso(1) identified-organization(3) dod(6) internet(1) private(4) enterp
       rvtn-certtemplate-enterprise-rdp         ::= { rvtn-certtemplate-enterprise 11 }
       rvtn-certtemplate-enterprise-serverauth  ::= { rvtn-certtemplate-enterprise 12 }
       rvtn-certtemplate-enterprise-ipsecserver ::= { rvtn-certtemplate-enterprise 13 }
+      rvtn-certtemplate-enterprise-clientauth  ::= { rvtn-certtemplate-enterprise 14 }
