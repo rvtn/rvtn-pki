@@ -1,1 +1,70 @@
-This document is currently empty.
+RVTN Prime Enterprise Authority
+Certification Practices Statement (CPS)
+
+1. Introduction
+
+This document describes the practices and constraints applicable to end-entity certificates issued by the RVTN Prime Enterprise Authority, an issuing Certificate Authority of the RVTN Prime PKI (Public Key Infrastructure).  Please note that certificates issued by the RVTN Prime Enterprise Authority are not intended for public use. Such certificates are marked 'Intended for RVTN Enterprise use only.'
+
+This document does not apply to any certificates issued to or by CAs that are not the RVTN Prime Enterprise Authority.
+
+2. Issuing CA
+
+Certificates in the scope of this CPS are end-entity certificates issued by the RVTN Prime Enterprise Authority:
+
+CN = RVTN Prime Enterprise Authority
+OU = RVTN Prime Certification Services
+O = RVTN
+C = US
+
+The intermediate CA certificate, and thus all end-entity certificates issued by the CA, are constrained to the following certificate assurance policies:
+
+RVTN Enterprise Basic Policy
+RVTN Enterprise Low Assurance Policy
+RVTN Enterprise Medium Assurance Policy
+RVTN Enterprise High Assurance Policy
+
+The intermediate CA certificate is not constrained to any application policy.  However, all end-entity certificates issued by the CA shall be constrained to specific application policies in accordance with this CPS.
+
+The intermediate CA certificate must contain a path length constraint that prevents the CA from issuing further intermediate certificates.  Thus, all certificates issued by the CA must be end-entity (leaf) certificates.
+
+3. Assurance Policies
+
+3.1 RVTN Enterprise Basic Policy
+
+This policy is currently unused, and is reserved for test purposes.
+
+All certificates issued with the Basic Assurance Policy must be manually approved by the CA manager.
+
+All certificates issued with the Basic Assurance Policy must be constrained to one or more of the following application policies:
+Client Authentication 
+
+Certificates intended for other purposes must use a higher assurance policy.
+
+Certificates issued with the Basic Assurance Policy are NOT suitable for authentication and authorization purposes on secure networks.
+
+3.2 RVTN Enterprise Low Assurance Policy
+
+End-entities may enroll and automatically enroll in certificates issued with the Low Assurance Policy without CA manager approval.
+
+All certificates issued with the Low Assurance Policy must be constrained to one or more of the following application policies:
+Client Authentication 
+Remote Desktop Authentication
+
+Certificates intended for other purposes must use a higher assurance policy.
+
+Certificates issued with the Low Assurance Policy are NOT suitable for authentication and authorization purposes on secure networks.
+
+3.3 RVTN Enterprise Medium Assurance Policy
+
+End-entities may enroll and automatically enroll in certificates issued with the Medium Assurance Policy without CA manager approval subject to the following TPM Key Attestation requirements:
+Private Keys (PKs) for such certificates must be stored in Trusted Platform Modules (TPMs) adhering to the TPM 2.0 standard with support for TPK key attestation.  The issuing CA must verify trust in the TPM based on the public key of the TPM's endorsement certificate (EKPub).  Individual TPMs must be identified by the certificate manager and manually be added to the list of trusted TPM EKPubs.
+
+End entities that do not fit the TPM Key Attestation requirements may not enroll in certificates issued with the Medium Assurance Policy without CA manager approval.
+
+All certificates issued with the Medium Assurance Policy must be constrained to no more than 4 specific application policies.  This CPS does not limit the application policies allowed for such certificates.
+
+3.4 RVTN Enterprise High Assurance Policy
+
+All certificates issued with the High Assurance Policy must be manually approved by the CA manager.  No certificates may be automatically enrolled with the High Assurance policy.
+
+This CPS does not limit the application policies allowed for such certificates.
