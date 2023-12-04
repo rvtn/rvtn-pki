@@ -24,7 +24,7 @@
                 <div class="section_header">RVTN Root Authority</div>
                 <p>The RVTN Root Authority is the primary trust anchor for the RVTN PKI.</p>
                 <p><a href="PrimeRoot.crt">Prime Root Certificate</a> -- DER encoded binary (.crt)</p>
-				<p><a href="PrimeRoot.pem">Prime Root Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
+                <p><a href="PrimeRoot.pem">Prime Root Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
                 <p><a href="PrimeRoot.crl">Prime Root CRL</a> -- Published Annually</p>
             </div>
             <div class="section">
@@ -32,20 +32,34 @@
                 <p>The RVTN Prime Enterprise Authority operates in accordance with the Prime Enterprise Certification Practices Statement (CPS).</p>
                 <p>This certification authority offers 4 levels of assurance as defined in the CPS: basic, low, medium, and high.</p>
                 <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
-                <p><a href="PrimeEnterprise.crt">Prime Enterprise Certificate</a> -- DER encoded binary (.crt)</p>
-				<p><a href="PrimeEnterprise.pem">Prime Enterprise Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
-                <p><a href="PrimeEnterprise.crl">Prime Enterprise CRL</a> -- Published Annually</p>
+                <p><a href="PrimeEnterprise-1.crt">Prime Enterprise Certificate (Valid after 2023-12-02)</a> -- DER encoded binary (.crt)</p>
+                <p><a href="PrimeEnterprise-1.pem">Prime Enterprise Certificate (Valid after 2023-12-02)</a> -- Base-64 encoded ASCII (.pem)</p>
+                <p><a href="PrimeEnterprise-1.crl">Prime Enterprise CRL (Valid after 2023-12-02)</a> -- Published Annually</p>
+                <p><a href="PrimeEnterprise.crt">Prime Enterprise (Valid before 2024-04-03)</a> -- DER encoded binary (.crt)</p>
+                <p><a href="PrimeEnterprise.pem">Prime Enterprise Certificate (Valid before 2024-04-03)</a> -- Base-64 encoded ASCII (.pem)</p>
+                <p><a href="PrimeEnterprise.crl">Prime Enterprise CRL (Valid before 2024-04-03)</a> -- Published Annually</p>
                 <p><a href="rvtn-enterprise-cps.txt">Prime Enterprise Certification Practices Statement (CPS)</a></p>
             </div>
             <div class="section">
-                <div class="section_header">RVTN Prime IE1 Authority</div>
-                <p>The RVTN Prime Enterprise Authority IE1 is an online issuing certification authority.</p>
+                <div class="section_header">RVTN Prime IE2 Authority</div>
+                <p>The RVTN Prime Enterprise Authority IE2 is an online issuing certification authority.  This CA superceded the RVTN Prime IE1 Authority on 2023-12-03.</p>
                 <p>This certification authority offers 3 levels of assurance as defined in the Prime Enterprise CPS: basic, low, and medium.</p>
                 <p>Certificates from this authority are only issued for the following purposes: Server Authentication, Client Authentication, Secure Email,
+                    IPsec End System, IPsec tunnel termination, IPsec User, IPsec IKE Intermediate, KDC Authentication, Private Key Archival, Certificate Request Agent, and Remote Desktop Authentication.</p>
+                <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
+                <p><a href="PrimeIE2.crt">Prime Enterprise IE2 Certificate</a> -- DER encoded binary (.crt)</p>
+                <p><a href="PrimeIE2.pem">Prime Enterprise IE2 Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
+                <p><a href="PrimeIE2.crl">Prime Enterprise IE2 CRL</a> -- Published Weekly</p>
+            </div>
+            <div class="section">
+                <div class="section_header">RVTN Prime IE1 Authority (Valid before 2024-02-14)</div>
+                <p>The RVTN Prime Enterprise Authority IE1 was an online issuing certification authority.</p>
+                <p>This certification authority offered 3 levels of assurance as defined in the Prime Enterprise CPS: basic, low, and medium.</p>
+                <p>Certificates from this authority were only issued for the following purposes: Server Authentication, Client Authentication, Secure Email,
                     IPsec End System, IPsec tunnel termination, IPsec User, IPsec IKE Intermediate, KDC Authentication, Private Key Archival, and Remote Desktop Authentication.</p>
                 <p>Please note that certificates issued by the RVTN Enterprise Authority are not intended for public use.  Such certificates are marked 'Intended for RVTN Enterprise use only.'</p>
                 <p><a href="PrimeIE1.crt">Prime Enterprise IE1 Certificate</a> -- DER encoded binary (.crt)</p>
-				<p><a href="PrimeIE1.pem">Prime Enterprise IE1 Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
+                <p><a href="PrimeIE1.pem">Prime Enterprise IE1 Certificate</a> -- Base-64 encoded ASCII (.pem)</p>
                 <p><a href="PrimeIE1.crl">Prime Enterprise IE1 CRL</a> -- Published Weekly</p>
             </div>
             <div class="section">
